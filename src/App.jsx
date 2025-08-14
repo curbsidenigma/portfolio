@@ -1,10 +1,11 @@
 import Background from './components/Background';
+import Header from './components/Header';
 
 function App() {
   return (
     <>
       <Background>
-        <h1>Portfolio Content</h1>
+        <Header />
       </Background>
     </>
   );
