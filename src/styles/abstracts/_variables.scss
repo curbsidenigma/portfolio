@@ -28,6 +28,7 @@
   --color-text: #111827; // gray-900
   --color-subtext: #374151; // gray-700
   --color-background: #f3f4f6; // gray-100
+  --color-surface: #e5e7eb; // gray-200
 
   // Dark Theme (Override)
   @media (prefers-color-scheme: dark) {
@@ -35,5 +36,6 @@
     --color-text: #f3f4f6; // gray-100
     --color-subtext: #d1d5db; // gray-300
     --color-background: #18181b; // zinc-900
+    --color-surface: #09090b; // zinc-950
   }
 }
