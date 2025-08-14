@@ -1,0 +1,33 @@
+/** 
+ * BASE STYLES
+ * Defines global styles.
+ */
+
+html {
+  // Use a fluid size for the root element
+  font-size: clamp(100%, 1rem + 0.25vw, 112.5%);
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+  background-color: var(--color-background);
+  color: var(--color-text);
+  font-family: var(--font-sans);
+  line-height: 1.6;
+
+  // Improved text rendering
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+// Responsive images and media
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}

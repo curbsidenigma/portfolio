@@ -1,0 +1,39 @@
+/** 
+ * ROOT & CUSTOM PROPERTIES (VARIABLES)
+ * Defines global variables for colors, fonts, and spacing.
+ */
+
+:root {
+  // Font Stacks
+  --font-sans: 'Noto Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI',
+    Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji';
+  --font-mono: 'Noto Mono', 'SF Mono', 'Consolas', 'Menlo', monospace;
+
+  // Base Font Sizes for Fluid Typography
+  --fs-scale-ratio: 1.2;
+  --fs-base: 1rem; // ~16px
+  --fs-sm: calc(var(--fs-base) / var(--fs-scale-ratio));
+  --fs-lg: calc(var(--fs-base) * var(--fs-scale-ratio));
+  --fs-xl: calc(var(--fs-lg) * var(--fs-scale-ratio));
+  --fs-2xl: calc(var(--fs-xl) * var(--fs-scale-ratio));
+
+  // Fluid Spacing
+  --space-base: 1rem;
+  --space-fluid-sm: clamp(0.5rem, 1.5vw, 0.75rem);
+  --space-fluid-md: clamp(1rem, 3vw, 1.5rem);
+  --space-fluid-lg: clamp(2rem, 6vw, 3rem);
+
+  // Light Theme (Default)
+  --color-primary: #2563eb; // blue-600
+  --color-text: #111827; // gray-900
+  --color-subtext: #374151; // gray-700
+  --color-background: #f3f4f6; // gray-100
+
+  // Dark Theme (Override)
+  @media (prefers-color-scheme: dark) {
+    --color-primary: #2563eb; // blue-600
+    --color-text: #f3f4f6; // gray-100
+    --color-subtext: #d1d5db; // gray-300
+    --color-background: #18181b; // zinc-900
+  }
+}
