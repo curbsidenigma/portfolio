@@ -2,3 +2,47 @@
  * CUSTOM FUNCTIONS (MIXINS)
  * Defines reusable functions
  */
+
+/** 
+ * A custom animation that fades a component from the left.
+ * @param {<length>} distance — The distance from where the component will appear.
+ * @param {<time>} duration — The duration of the fade.
+ * @param {<time>} delay — The time the fade waits to perform.
+ */
+@mixin fadeInLeft($distance, $duration, $delay) {
+  opacity: 0;
+  animation: fadeInLeft $duration ease forwards;
+  animation-delay: $delay;
+  @keyframes fadeInLeft {
+    from {
+      opacity: 0;
+      transform: translateX(-$distance);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+}
+
+/** 
+ * A custom animation that fades a component from the right.
+ * @param {<length>} distance — The distance from where the component will appear.
+ * @param {<time>} duration — The duration of the fade.
+ * @param {<time>} delay — The time the fade waits to perform.
+ */
+@mixin fadeInRight($distance, $duration, $delay) {
+  opacity: 0;
+  animation: fadeInRight $duration ease forwards;
+  animation-delay: $delay;
+  @keyframes fadeInRight {
+    from {
+      opacity: 0;
+      transform: translateX($distance);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+}
