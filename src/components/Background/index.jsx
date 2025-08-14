@@ -9,7 +9,9 @@ function Background({ children }) {
           <div className={styles.chevronRight}></div>
         </div>
 
-        <div className={styles.portfolioContent}>{children}</div>
+        <div className={styles.portfolioContent}>
+          <div className={styles.portfolioHead}>{children}</div>
+        </div>
       </div>
     </>
   );

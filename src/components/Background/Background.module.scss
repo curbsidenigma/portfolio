@@ -27,5 +27,13 @@
   .portfolioContent {
     position: absolute;
     z-index: 1;
+
+    .portfolioHead {
+      position: fixed;
+      top: 3rem;
+      bottom: 3rem;
+      left: 3rem;
+      width: calc(100vw / 3 - 4rem);
+    }
   }
 }
