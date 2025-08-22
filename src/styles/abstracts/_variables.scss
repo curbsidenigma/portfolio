@@ -16,6 +16,8 @@
   --fs-lg: calc(var(--fs-base) * var(--fs-scale-ratio));
   --fs-xl: calc(var(--fs-lg) * var(--fs-scale-ratio));
   --fs-2xl: calc(var(--fs-xl) * var(--fs-scale-ratio));
+  --fs-3xl: calc(var(--fs-2xl) * var(--fs-scale-ratio));
+  --fs-4xl: calc(var(--fs-3xl) * var(--fs-scale-ratio));
 
   // Fluid Spacing
   --space-base: 1rem;
@@ -30,6 +32,9 @@
   --color-background: #f3f4f6; // gray-100
   --color-surface: #e5e7eb; // gray-200
 
+  // Shadowing (Light)
+  --shadow-card: 0px 0.25rem 1rem rgba(0, 0, 0, 0.25);
+
   // Dark Theme (Override)
   @media (prefers-color-scheme: dark) {
     --color-primary: #2563eb; // blue-600
@@ -37,5 +42,8 @@
     --color-subtext: #d1d5db; // gray-300
     --color-background: #18181b; // zinc-900
     --color-surface: #09090b; // zinc-950
+
+    // Shadowing (Dark)
+    --shadow-card: 0px 0.25rem 1rem rgba(0, 0, 0, 0.5);
   }
 }
