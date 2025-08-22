@@ -29,8 +29,10 @@
   --color-primary: #2563eb; // blue-600
   --color-text: #111827; // gray-900
   --color-subtext: #374151; // gray-700
-  --color-background: #f3f4f6; // gray-100
-  --color-surface: #e5e7eb; // gray-200
+  --color-background: #f9fafb; // gray-50
+  --color-background-hover: #f3f4f6; // gray-100
+  --color-background-active: #e5e7eb; // gray-200
+  --color-surface: #d1d5db; // gray-300
 
   // Shadowing (Light)
   --shadow-card: 0px 0.25rem 1rem rgba(0, 0, 0, 0.25);
@@ -41,6 +43,8 @@
     --color-text: #f3f4f6; // gray-100
     --color-subtext: #d1d5db; // gray-300
     --color-background: #18181b; // zinc-900
+    --color-background-hover: #27272a; // zinc-800
+    --color-background-active: #3f3f46; // zinc-700
     --color-surface: #09090b; // zinc-950
 
     // Shadowing (Dark)
