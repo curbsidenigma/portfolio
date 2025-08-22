@@ -13,48 +13,55 @@ header {
     box-shadow: var(--shadow-card);
 
     .headerContent {
+      overflow-y: auto;
       display: flex;
       flex-direction: column;
-      justify-content: center;
-      align-items: center;
       height: 100%;
       padding: 15%;
 
-      img.avatar {
-        width: 100%;
-        height: auto;
-        max-width: 15rem;
-        border-radius: 50%;
-        padding-bottom: 0.5rem;
-      }
-
-      h2.fullName {
+      .contentWrapper {
         display: flex;
         flex-direction: column;
-        padding: 0.5rem 0;
-        font-family: 'Google Sans Code', var(--font-mono);
-        font-size: var(--fs-3xl);
-        font-weight: 500;
-        font-style: normal;
-        text-align: center;
+        align-items: center;
+        margin: auto 0;
 
-        span.firstName {
-          color: var(--color-primary);
+        img.avatar {
+          width: 75%;
+          height: auto;
+          max-width: 17.5rem;
+          max-height: 17.5rem;
+          border-radius: 50%;
+          padding-bottom: 0.5rem;
         }
-      }
 
-      p.quote {
-        padding: 0.5rem 0;
-        color: var(--color-subtext);
-        font-size: var(--fs-lg);
-        text-align: center;
-      }
+        h2.fullName {
+          display: flex;
+          flex-direction: column;
+          padding: 0.5rem 0;
+          font-family: 'Google Sans Code', var(--font-mono);
+          font-size: clamp(var(--fs-xl), 2vw, var(--fs-3xl));
+          font-weight: 500;
+          font-style: normal;
+          text-align: center;
 
-      ul.headerItems {
-        display: flex;
-        justify-content: center;
-        width: 100%;
-        padding-top: 2.5rem;
+          span.firstName {
+            color: var(--color-primary);
+          }
+        }
+
+        p.quote {
+          padding: 0.5rem 0;
+          color: var(--color-subtext);
+          font-size: clamp(var(--fs-base), 1.5vw, var(--fs-xl));
+          text-align: center;
+        }
+
+        ul.headerItems {
+          display: flex;
+          justify-content: center;
+          width: 100%;
+          padding-top: clamp(var(--fs-xl), 2vw, var(--fs-3xl));
+        }
       }
     }
   }
@@ -67,11 +74,11 @@ li {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 3rem;
-    height: 3rem;
+    width: clamp(2rem, 3.25vw, 3rem);
+    height: clamp(2rem, 3.25vw, 3rem);
     border-radius: clamp(0.4rem, 1vw, 0.5rem);
     color: var(--color-text);
-    font-size: var(--fs-xl);
+    font-size: clamp(var(--fs-base), 1.5vw, var(--fs-xl));
 
     &:hover {
       background-color: var(--color-background-hover);
