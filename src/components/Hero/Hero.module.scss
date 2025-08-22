@@ -1,0 +1,49 @@
+section.hero {
+  position: absolute;
+  top: 3vw;
+  left: calc(100vw / 3 + 1.5vw);
+  width: calc(100vw * 2 / 3 - 4.25vw);
+  height: calc(100vh - 6vw);
+
+  .heroCard {
+    width: 100%;
+    height: 100%;
+    border-radius: 1rem;
+    background-color: var(--color-background);
+    box-shadow: var(--shadow-card);
+
+    .heroContent {
+      overflow-y: auto;
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+      padding: 15%;
+
+      .contentWrapper {
+        display: flex;
+        flex-direction: column;
+        margin: auto 0;
+
+        p.greeting {
+          font-family: var(--font-mono);
+        }
+
+        h1 {
+          font-family: var(--font-mono);
+          font-size: 3rem;
+          span.role {
+            color: var(--color-primary);
+          }
+        }
+
+        p.description {
+          font-family: 'Google Sans Code', var(--font-mono);
+        }
+
+        span.tag {
+          color: #eb9825;
+        }
+      }
+    }
+  }
+}
