@@ -17,7 +17,7 @@ section.hero {
       display: flex;
       flex-direction: column;
       height: 100%;
-      padding: 15%;
+      padding: 10% 15%;
 
       .contentWrapper {
         display: flex;
@@ -25,23 +25,29 @@ section.hero {
         margin: auto 0;
 
         p.greeting {
+          color: var(--color-subtext);
           font-family: var(--font-mono);
+          font-size: clamp(var(--fs-base), 1vw, var(--fs-lg));
         }
 
         h1 {
+          padding: 1rem 0;
           font-family: var(--font-mono);
-          font-size: 3rem;
+          font-size: 3vw;
+
           span.role {
             color: var(--color-primary);
           }
         }
 
         p.description {
-          font-family: 'Google Sans Code', var(--font-mono);
+          color: var(--color-subtext);
+          font-family: var(--font-mono);
+          font-size: clamp(var(--fs-base), 1vw, var(--fs-lg));
         }
 
         span.tag {
-          color: #eb9825;
+          color: var(--color-accent);
         }
       }
     }

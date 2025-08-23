@@ -13,7 +13,7 @@ function Hero() {
                 <span className={styles.tag}>{'<span>'}</span>
               </p>
               <h1>
-                Junior <span className={styles.role}>{'{Full-Stack}'}</span> Web
+                Junior <span className={styles.role}>{'{\'Full-Stack\'}'}</span> Web
                 & App Developer
               </h1>
               <p className={styles.description}>

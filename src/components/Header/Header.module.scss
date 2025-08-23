@@ -39,7 +39,7 @@ header {
           flex-direction: column;
           padding: 0.5rem 0;
           font-family: var(--font-mono);
-          font-size: var(--fs-4xl);
+          font-size: 2.5vw;
           font-weight: 700;
           font-style: normal;
           text-align: center;
@@ -53,11 +53,11 @@ header {
           padding: 0.5rem 0;
           color: var(--color-subtext);
           font-family: var(--font-mono);
-          font-size: clamp(var(--fs-base), 1vw, var(--fs-3xl));
+          font-size: clamp(var(--fs-base), 1vw, var(--fs-lg));
           text-align: center;
 
           span.tag {
-            color: #eb9825;
+            color: var(--color-accent);
           }
 
           span.cursor {
