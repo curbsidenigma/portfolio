@@ -38,9 +38,9 @@ header {
           display: flex;
           flex-direction: column;
           padding: 0.5rem 0;
-          font-family: 'Google Sans Code', var(--font-mono);
-          font-size: clamp(var(--fs-xl), 2vw, var(--fs-3xl));
-          font-weight: 500;
+          font-family: var(--font-mono);
+          font-size: var(--fs-4xl);
+          font-weight: 700;
           font-style: normal;
           text-align: center;
 
@@ -52,8 +52,29 @@ header {
         p.quote {
           padding: 0.5rem 0;
           color: var(--color-subtext);
-          font-size: clamp(var(--fs-base), 1.5vw, var(--fs-xl));
+          font-family: var(--font-mono);
+          font-size: clamp(var(--fs-base), 1vw, var(--fs-3xl));
           text-align: center;
+
+          span.tag {
+            color: #eb9825;
+          }
+
+          span.cursor {
+            display: inline-block;
+            vertical-align: middle;
+            height: 1.25rem;
+            border-left: 2.5px solid var(--color-primary);
+            animation: blink 1s steps(2, start) infinite;
+          }
+          @keyframes blink {
+            from {
+              visibility: visible;
+            }
+            to {
+              visibility: hidden;
+            }
+          }
         }
 
         ul.headerItems {

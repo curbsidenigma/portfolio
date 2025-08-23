@@ -1,6 +1,7 @@
 import styles from './Header.module.scss';
+import useTypewriter from '../../hooks/useTypewriter';
 import avatarImg from '../../assets/images/profile.jpeg';
-import { headerItems } from '../../data/headerData';
+import { headerItems, words } from '../../data/headerData';
 
 function HeaderItem({ href, icon }) {
   return (
@@ -20,6 +21,12 @@ function HeaderItem({ href, icon }) {
 }
 
 function Header() {
+  const typedText = useTypewriter(words, {
+    typingSpeed: 120,
+    deletingSpeed: 60,
+    pause: 1000,
+  });
+
   return (
     <>
       <header>
@@ -33,10 +40,12 @@ function Header() {
               />
               <h2 className={styles.fullName}>
                 <span className={styles.firstName}>Gerardo</span>
-                <span className={styles.lastName}>Domínguez Ramírez</span>
+                <span className={styles.lastName}>Domínguez</span>
               </h2>
               <p className={styles.quote}>
-                I am a junior full-stack developer based in Mexico.
+                <span className={styles.tag}>{'<p>'}</span>I'm {typedText}
+                <span className={styles.cursor}></span>
+                <span className={styles.tag}>{'<p>'}</span>
               </p>
               <ul className={styles.headerItems}>
                 {headerItems.map(item => (
