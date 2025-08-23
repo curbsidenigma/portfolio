@@ -38,3 +38,5 @@ export const headerItems = [
     text: 'Telegram',
   },
 ];
+
+export const words = ['a Developer', 'a Designer', 'an Engineer'];
